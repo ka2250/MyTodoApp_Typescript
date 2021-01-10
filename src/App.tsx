@@ -4,6 +4,8 @@ import "./style.css"
 import "./Type"
 
 export const App = () => {
+  
+
   return (
     <>
       <header>
