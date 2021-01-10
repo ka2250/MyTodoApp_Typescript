@@ -1,0 +1,152 @@
+/** Loading Google Fonts **/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+/** styles **/
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 auto;
+    width: 900px;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 194, 65);
+    color: white;
+    padding: 10px 20px
+}
+
+header p {
+    margin-left: 12px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/**
+    input area
+**/
+.input-area {
+    padding-top: 20px;
+}
+
+.input-text {
+    padding: 6px 12px;
+    outline: none;
+    border: none;
+    background-color:  rgb(235, 235, 235);
+    width: 300px;
+}
+
+.input-image {
+    margin-left: 14px;
+}
+
+.add-button {
+    outline: none;
+    border: none;
+    background-color:rgb(45, 216, 102);
+    color: white;
+    margin-left: 12px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color:rgb(0, 194, 65);
+}
+
+
+/**
+    todos area
+**/
+.todos-area {
+    padding-top: 30px;
+}
+
+
+/**
+    incomplete area
+**/
+.incomplete-area {
+    border: 1px solid rgba(214, 214, 214, 0.452);
+    padding: 10px 20px;
+    width: auto;
+    margin-bottom: 20px;
+    min-height: 100px;
+}
+
+.incomplete-area p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(49, 49, 49);
+}
+
+/**
+    coplete area
+**/
+.complete-area {
+    border: 1px solid rgba(214, 214, 214, 0.452);
+    padding: 10px 20px;
+    width: auto;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+.complete-area p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(49, 49, 49);
+}
+
+/**
+    list style
+**/
+
+.list-row {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.complete-btn {
+    outline: none;
+    border: none;
+    background-color: rgb(253, 115, 65);
+    color: white;
+    margin-left: 12px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    outline: none;
+    border: none;
+    background-color: rgb(218, 71, 71);
+    color: white;
+    margin-left: 12px;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.back-btn {
+    outline: none;
+    border: none;
+    background-color: rgb(173, 173, 173);
+    color: white;
+    margin-left: 12px;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-left: 10px;
+}
