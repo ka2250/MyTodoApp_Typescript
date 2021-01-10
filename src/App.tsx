@@ -7,7 +7,7 @@ export const App = () => {
     <>
       <header>
         <h1>todos.</h1>
-        <p>this is react todo app.</p>
+        <p>this is React&TS todo app.</p>
       </header>
 
       <div className="input-area">
