@@ -1,38 +1,30 @@
-import React from "react"
+import React, { useState } from "react"
 
 import "./style.css"
-import "./Type"
+import { Todo } from "./components/Type"
+import { TodoList } from "./components/TodoList"
+import {Input} from "./components/Input"
+
+const initialState: Todo[] = [
+  {
+    id: 2,
+    title: "next Todos",
+    done: false
+  },
+  {
+    id: 3,
+    title: "this is best choice",
+    done: true
+  }
+]
 
 export const App = () => {
+  const [todo, setTodo] = useState(initialState)
   
-
   return (
     <>
-      <header>
-        <h1>todos.</h1>
-        <p>this is React&TS todo app.</p>
-      </header>
-
-      <div className="input-area">
-        <input className='input-text' placeholder="input todo ..." />
-        <button className='add-button'>Add</button>
-      </div>
-
-      <div className="todos-area">
-        <div className="incomplete-area"> 
-          <p>Incomplete TODOs</p>
-          <ul>
-            <li>save the children.</li>
-          </ul>
-        </div>
-
-        <div className="complete-area">
-          <p>Complete TODOs</p>
-          <ul>
-            <li>save the children.</li>
-          </ul>
-        </div>
-      </div>
+      <Input setTodos={setTodo} todos={todo} />
+      <TodoList setTodos={setTodo} todos={todo} />
     </>
   );
 };
